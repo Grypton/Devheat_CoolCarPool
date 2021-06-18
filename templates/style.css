@@ -107,7 +107,6 @@
 @media (max-width: 592px) {
     div.second-text {
         width: 90% !important;
-        border: 2px solid red;
         margin: auto;
         align-items: center;
         height: 411.200px;
@@ -125,7 +124,6 @@
 @media (max-width: 992px) {
     div.second-text {
         width: 90% !important;
-        border: 2px solid red;
         margin: auto;
         align-items: center;
         height: 411.200px;
@@ -485,7 +483,7 @@ input.submitbutton.ripplelink {
     font-weight: normal;
     text-decoration: inherit;
     margin-left: 5px;
-    color: ##ffffff;
+    color: #ffffff;
 }
 
 .fa-facebook {
