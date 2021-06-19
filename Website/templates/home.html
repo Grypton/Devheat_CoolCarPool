@@ -21,9 +21,10 @@ Home
                     sit amet consectetur adipisicing elit. Sequi aliquid assumenda saepe hic fuga unde laboriosam
                     obcaecati est praesentium optio accusantium placeat deserunt pariatur reiciendis voluptatum a,
                     sapiente laudantium labore.</p>
-                <a href="/search" style="text-decoration: none; color:white;"><button type="button" class="btn search-button btn-primary btn-lg">Take a Ride &nbsp <img
-                        src="{{ url_for('static', filename = 'images/search.png') }}" alt="search button"
-                        width="12%"></button></a>
+                <a href="/search" style="text-decoration: none; color:white;"><button type="button"
+                        class="btn search-button btn-primary btn-lg">Take a Ride &nbsp <img
+                            src="{{ url_for('static', filename = 'images/search.png') }}" alt="search button"
+                            width="12%"></button></a>
             </div>
         </div>
     </div>
@@ -62,4 +63,50 @@ Home
         </div>
     </div>
 </section>
+
+<section class="faq-container">
+
+    <p id="faq-heading">FAQ's</p>
+    <div class="faqs">
+        <section class="faq">
+            <h2 class="faq_question to-bottom">FAQ Question 1</h2>
+            <div class="faq_answer">FAQ Answer</div>
+        </section>
+        <section class="faq">
+            <h2 class="faq_question to-bottom">FAQ Question 2</h2>
+            <div class="faq_answer">FAQ Answer 2</div>
+        </section>
+        <section class="faq">
+            <h2 class="faq_question to-bottom">FAQ Question 3</h2>
+            <div class="faq_answer">FAQ Answer 3</div>
+        </section>
+        <section class="faq">
+            <h2 class="faq_question to-bottom">FAQ Question 4</h2>
+            <div class="faq_answer">FAQ Answer 4</div>
+        </section>
+        <section class="faq">
+            <h2 class="faq_question to-bottom">FAQ Question 5</h2>
+            <div class="faq_answer">FAQ Answer 5</div>
+        </section>
+    </div>
+
+</section>
+
+<script>
+    let items = document.querySelectorAll('.faq');
+
+    let length = items.length;
+
+    items.forEach(
+        (item) => {
+            item.addEventListener('click', function () {
+                item.children[1].style.display = item.children[1].style.display === 'block' ? item.children[1].style.display = 'none' : item.children[1].style.display = 'block';
+                item.children[0].classList.toggle('to-bottom');
+                item.children[0].classList.toggle('to-top');
+            })
+        }
+    )
+</script>
+
+
 {%endblock%}
