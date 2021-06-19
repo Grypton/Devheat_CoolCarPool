@@ -70,7 +70,7 @@
 .search-button {
     display: inline;
     width: fit-content;
-    background-color: rgb(85, 129, 224) !important;
+    background-color: #8a8d94 !important;
     align-items: center;
     margin: 2rem;
     border-radius: 20px;
@@ -185,6 +185,13 @@ img.img2 {
     .page2 {
         height: 861.66px;
         margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 568px){
+    .page2 {
+        height: 861.66px;
+        margin-bottom: -2rem;
     }
 }
 
