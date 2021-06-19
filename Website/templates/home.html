@@ -1,0 +1,65 @@
+{%extends "base.html"%}
+
+{% block element %}
+<link rel="stylesheet" href="../static/home_style.css">
+{% endblock %}
+
+{%block title%}
+Home
+{%endblock%}
+
+
+{%block content%}
+<section class="first">
+    <div class='landing'>
+        <div class="home"><img class="image1" src="{{ url_for('static', filename = 'images/carpool.jpg') }}"
+                alt="people riding together"></div>
+        <div class="text">
+            <div class="new">
+                <h1 class='heading-one'>Have a Ride</h1>
+                <p class='para-one'>Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Sequi aliquid assumenda saepe hic fuga unde laboriosam
+                    obcaecati est praesentium optio accusantium placeat deserunt pariatur reiciendis voluptatum a,
+                    sapiente laudantium labore.</p>
+                <a href="/search" style="text-decoration: none; color:white;"><button type="button" class="btn search-button btn-primary btn-lg">Take a Ride &nbsp <img
+                        src="{{ url_for('static', filename = 'images/search.png') }}" alt="search button"
+                        width="12%"></button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="second">
+    <div class="page2">
+        <div class='landing'>
+            <div class="text second-text">
+                <div>
+                    <h3 class='why' id="why-Carpool?">Why should I Carpool?</h3>
+                    <p>&nbsp;
+                    </p>
+                </div>
+                <ul>
+                    <li><span>
+                            <h5>Save upto 80% on Commute Cost</h5>
+                            <p>sRiders save upto Rs 3000 per month on commute costs compared to people who opt for
+                                cabs/auto </p>
+                        </span></li>
+                    <li><span>
+                            <h5>Expand your Professional Network</h5>
+                            <p>Carpool with professionals from different domains and expand your professional
+                                network while commuting</p>
+                        </span></li>
+                    <li><span>
+                            <h5>Reduce Pollution &amp;
+                                Save Environment</h5>
+                            <p class="p1">Carpool and reduce traffic and pollution.</p>
+                            <div>&nbsp;
+                            </div>
+                        </span></li>
+                </ul>
+            </div>
+            <div class="image0"><img src="{{ url_for('static', filename = 'images/image2.png') }}"
+                    alt=" round images with travelling people" width=50% class='img2 home'></div>
+        </div>
+    </div>
+</section>
+{%endblock%}

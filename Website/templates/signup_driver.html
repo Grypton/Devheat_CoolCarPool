@@ -1,0 +1,42 @@
+{%extends "base.html"%}
+
+{% block element %}
+<link rel="stylesheet" href="../static/signup_style.css">
+{% endblock %}
+{% block title %}
+Sign Up
+{% endblock %}
+
+
+{%block content%}
+
+
+<div id="main">
+    <div id="inmain">
+        <div id="div1">
+            <h1 id="heading">Sign Up</h1>
+            <p id="para">Change the way transportation works</p>
+        </div>
+
+        <form method="POST">
+            <div id="div2">
+                <input type="text" id="name" name="name" class="input" placeholder="FUllname">
+                <input type="text" id="username" class="input" placeholder="Username">
+                <input type="email" id="emailid" class="input" placeholder="email@example.com">
+                <input type="tel" id="phone" class="input" name="phone" placeholder="phone number" pattern="[6-9]{1}[0-9]{9}">
+                <p class="upload" >Upload Driving licence :</p> <input type="file" class="input" id="driving_licence" name="driving_licence" placeholder="Upload your Driving licence" >
+                <p class="upload">Upload Police Verification Certificate :</p> <input type="file" class="input" id="PCC" name="PCC" placeholder="Upload your Driving licence" >
+                <p class="upload">A pdf of all sides of Car :</p> <input type="file" class="input" id="images" name="images" placeholder="Upload your Driving licence" >
+                <input type="text" id="initial-point" class="input" placeholder="Initial point of Driving">
+                <input type="text" id="final-point" class="input" placeholder="Final point of Driving">
+                <input type="password" id="password" class="input" placeholder="password">
+                <input type="password" id="confirm-password" class="input" placeholder="confirm password">
+                <input type="submit" id="submit" value="SIGN UP" class="input">
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+{%endblock%}

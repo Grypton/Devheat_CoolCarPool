@@ -1,0 +1,54 @@
+#main {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 582.81px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+@media (max-width: 582.81px) {
+    #main {
+        width: 360px;
+    }
+}
+
+#inmain{
+    margin: 25px ;
+}
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#heading {
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 25px auto;
+}
+
+.input{
+    padding: 12px;
+    margin: 8px 8px;
+    background-color: rgb(250, 246, 246);
+    border: none;
+    border-radius: 3px;
+}
+
+#submit{
+    background-color: rgb(129, 164, 235);
+}
+
+img{
+    /* display: block; */
+    margin: auto !important;
+}
+

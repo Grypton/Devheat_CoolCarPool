@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block element %}
+<link rel="stylesheet" href="../static/search_style.css">
+{% endblock %}
+
+{% block title %}
+Login
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="main">
+    <div id="inmain">
+        <div id="div1">
+            <h1 id="heading">Search you ride</h1>
+        </div>
+        <form method="POST">
+            <div id="div2">
+                <input type="text" id="starting" class="input" placeholder="Starting Point">
+                <img src="../static/images/arrow.svg" alt="Kiwi standing on oval" width="30px">
+                <input type="text" id="destination" class="input" placeholder="Destination">
+                <input type="submit" id="submit" value="Search" class="input">
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+{% endblock %}
