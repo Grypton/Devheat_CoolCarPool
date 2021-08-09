@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+
+{% block element %}
+<link rel="stylesheet" href="../static/signup_style.css">
+{% endblock %}
+{% block title %}
+Sign Up
+{% endblock %}
+
+
+{%block content%}
+
+
+<div id="main">
+    <div id="inmain">
+        <div id="div1">
+            <h1 id="heading">Select the type</h1>
+
+        </div>
+        <form method="POST">
+            <div id="div2">
+                <a href="/signup-rider" class="input">As a Rider</a>
+                <a href="/signup-driver" class="input">As a Driver</a>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+{%endblock%}

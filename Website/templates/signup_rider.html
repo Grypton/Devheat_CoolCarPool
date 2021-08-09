@@ -1,0 +1,35 @@
+{%extends "base.html"%}
+
+{% block element %}
+<link rel="stylesheet" href="../static/signup_style.css">
+{% endblock %}
+{% block title %}
+Sign Up
+{% endblock %}
+
+
+{%block content%}
+
+
+<div id="main">
+    <div id="inmain">
+        <div id="div1">
+            <h1 id="heading">Sign Up</h1>
+            <p id="para">Change the way transportation works</p>
+        </div>
+
+        <form method="POST">
+            <div id="div2">
+                <input type="text" id="username" name="username" class="input" placeholder="Username">
+                <input type="email" id="emailid" name="email" class="input" placeholder="email@example.com">
+                <input type="password" id="password" name="password" class="input" placeholder="password">
+                <input type="password" id="confirm-password" name="confirm-password" class="input" placeholder="confirm password">
+                <input type="submit" id="submit" value="SIGN UP" class="input">
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+{%endblock%}
